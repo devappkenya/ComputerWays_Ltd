@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096527384829",
+    "project_id": "computerways-ltd-abc29",
+    "storage_bucket": "computerways-ltd-abc29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096527384829:android:64ec03d6dd2a1009062e94",
+        "android_client_info": {
+          "package_name": "com.example.computerwaysltd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096527384829-689m53tbotbupfe5funhl5h3k3l3glb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVBMYWHUb9ldSLgr7IppKzb8pzR2vt29c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096527384829-689m53tbotbupfe5funhl5h3k3l3glb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
