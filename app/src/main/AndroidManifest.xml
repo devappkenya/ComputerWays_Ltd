@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComputerWaysLtd">
         <activity
+            android:name=".Store_department"
+            android:exported="true" />
+        <activity
             android:name=".Login"
             android:exported="true" />
         <activity
