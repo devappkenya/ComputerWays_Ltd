@@ -9,16 +9,18 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    TextView Dptmnt_label,Level_label;
     private FirebaseAuth mAuth; Button legister; String[] Department = {"Technical Department","Stores Department"};String[] Enter_Level = {"Department Manager","Assistant Manager","Engineer/Technician","Internship","Academic Attachment"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState); Dptmnt_label = findViewById(R.id.Department_label); Level_label = findViewById(R.id.Level_label);
         setContentView(R.layout.activity_register); legister=findViewById(R.id.buttonregister); Spinner spin = (Spinner) findViewById(R.id.spinner1); Spinner Spin = (Spinner) findViewById(R.id.spinner2); spin.setOnItemSelectedListener(this);
         ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,Enter_Level);  aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); spin.setAdapter(aa); Spin.setOnItemSelectedListener(this);
         ArrayAdapter bb = new ArrayAdapter(this,android.R.layout.simple_spinner_item,Department);  bb.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); Spin.setAdapter(bb);
